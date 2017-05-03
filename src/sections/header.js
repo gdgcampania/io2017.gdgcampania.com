@@ -4,7 +4,7 @@ import Section from "../components/section";
 import Wrapper from "../components/wrapper";
 
 export default () => (
-  <Section centered variant="header">
+  <Section variant="header" centered fullscreen>
     <Wrapper>
       <h1>Google IO extended Campania</h1>
       <h2>17 Maggio 2017</h2>
