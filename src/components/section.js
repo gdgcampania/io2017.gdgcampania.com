@@ -8,4 +8,11 @@ export default styled.section`
     width: 100%;
 
     background-color: red;
+
+    ${(props) => props.centered && `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    `}
 `;
