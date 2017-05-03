@@ -5,6 +5,10 @@ import { injectGlobal } from "styled-components";
 import Section from "./components/section";
 
 injectGlobal`
+  * {
+    margin: 0;
+  }
+
   html, body, #root {
     height: 100%;
   }
