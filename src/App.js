@@ -8,6 +8,8 @@ import Wrapper from "./components/wrapper";
 import Header from "./sections/header";
 import About from "./sections/about";
 import Speakers from "./sections/speakers";
+import Schedule from "./sections/schedule";
+import Location from "./sections/location";
 
 injectGlobal`
   * {
@@ -26,6 +28,8 @@ class App extends Component {
         <Header />
         <About />
         <Speakers />
+        <Schedule />
+        <Location />
       </div>
     );
   }
