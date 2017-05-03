@@ -7,7 +7,8 @@ export default styled.section`
     min-height: 100%;
     width: 100%;
 
-    background-color: ${(props) => props.theme.backgroundColor};
+    color: ${(props) => props.theme.header.text};
+    background-color: ${(props) => props.theme.header.background};
 
     ${(props) => props.centered && `
         display: flex;

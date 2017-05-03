@@ -1,3 +1,6 @@
 export default {
-    backgroundColor: '#525b64',
+    header: {
+        background: '#525b64',
+        text: 'white',
+    },
 };
