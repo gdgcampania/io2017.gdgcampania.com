@@ -7,6 +7,7 @@ import Wrapper from "./components/wrapper";
 
 import Header from "./sections/header";
 import About from "./sections/about";
+import Speakers from "./sections/speakers";
 
 injectGlobal`
   * {
@@ -24,6 +25,7 @@ class App extends Component {
       <div>
         <Header />
         <About />
+        <Speakers />
       </div>
     );
   }
