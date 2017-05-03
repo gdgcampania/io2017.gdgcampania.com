@@ -6,6 +6,7 @@ import Section from "./components/section";
 import Wrapper from "./components/wrapper";
 
 import Header from "./sections/header";
+import About from "./sections/about";
 
 injectGlobal`
   * {
@@ -17,18 +18,12 @@ injectGlobal`
   }
 `;
 
-
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-
-        <Section>
-          <Wrapper>
-            this is the Wrapper
-          </Wrapper>
-        </Section>
+        <About />
       </div>
     );
   }
