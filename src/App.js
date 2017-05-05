@@ -14,7 +14,9 @@ import Location from "./sections/location";
 injectGlobal`
   * {
     margin: 0;
-  }
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
   html, body, #root, #root > div {
     height: 100%;

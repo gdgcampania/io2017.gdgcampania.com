@@ -1,20 +1,84 @@
 import React from "react";
 
+import styled from "styled-components";
+
 import Section from "../components/section";
 import Wrapper from "../components/wrapper";
 
+const HeaderTitle = styled.h1`
+  font-family: 'Libre Baskerville', serif;
+  font-size: 8vh;
+  font-weight: normal;
+  text-align: center;
+`;
+
+const DetailsBox = styled.div`
+  width: 80%;
+  background: #fdaa89;
+  color: black;
+
+  padding: 2rem 2rem;
+
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+
+  transform: translate(-50%, 50%);
+
+  box-shadow: 0 0 35px -5px #000;
+
+  display: flex;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+`;
+
+const Date = styled.h2`
+  margin-right: 1em;
+`;
+
+const Button = styled.button`
+  background: transparent;
+  color: white;
+  border: 2px solid currentColor;
+  border-radius: 1em;
+  padding: 1em 2em;
+
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-left: auto;
+
+  &:hover {
+    background: white;
+    color: #fdaa89;
+  }
+`;
+
 export default () => (
-  <Section variant="header" centered fullscreen>
+  <Section
+    variant="header"
+    background="https://source.unsplash.com/1600x900/?seaside"
+    centered
+    relative
+    almostFullscreen
+    overlay
+  >
     <Wrapper>
-      <h1>Google IO extended Campania</h1>
-      <h2>17 Maggio 2017</h2>
+      <HeaderTitle>Google IO extended Campania</HeaderTitle>
+
+    </Wrapper>
+
+    <DetailsBox>
+      <Date>17 Maggio 2017</Date>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        Cumque quos ratione optio blanditis deserunt saepe iure
-        unt odit atque eius voluptatum labore ex
+        Città della Scienza, Napoli
       </p>
 
-      <button>Registrati</button>
-    </Wrapper>
+      <Button>Registrati</Button>
+    </DetailsBox>
   </Section>
 );
