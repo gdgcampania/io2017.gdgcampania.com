@@ -21,6 +21,10 @@ injectGlobal`
   html, body, #root, #root > div {
     height: 100%;
   }
+
+  body {
+    font-family: 'Rubik', sans-serif;
+  }
 `;
 
 class App extends Component {
@@ -28,7 +32,6 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <About />
         <Speakers />
         <Schedule />
         <Location />

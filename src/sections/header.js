@@ -31,7 +31,6 @@ const DetailsBox = styled.div`
 
   display: flex;
   align-items: center;
-  font-family: 'Rubik', sans-serif;
 `;
 
 const Date = styled.h2`

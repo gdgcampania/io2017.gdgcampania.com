@@ -19,6 +19,7 @@ export default styled.section`
 
     ${props => props.almostFullscreen && `
         min-height: 80%;
+        margin-bottom: 80px;
     `}
 
     ${props => props.relative && `

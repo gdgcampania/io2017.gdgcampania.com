@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export default styled.div`
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: ${props => props.theme.maxWidth}px;
 
-    padding: 20px 0;
+  max-width: 900px;
+  margin: 0 auto;
+
+  padding: 20px 0;
 `;
