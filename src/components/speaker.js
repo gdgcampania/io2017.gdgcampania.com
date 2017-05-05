@@ -1,19 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+import SpeakerName from "./speaker-name";
+import SmallText from "./small-text";
+
 const Avatar = styled.img`
   width: 100%;
   height: auto;
-`;
-
-const SpeakerName = styled.h1`
-  font-size: 20px;
-  margin-bottom: 0.2em;
-`;
-
-const SpeakerCompany = styled.p`
-  font-size: 12px;
-  font-style: italic;
 `;
 
 const SpeakerInformation = styled.div`
@@ -25,7 +18,7 @@ const BaseSpeaker = ({ picture, company, speaker, ...props }) => (
     <Avatar src={picture} />
     <SpeakerInformation>
       <SpeakerName>{speaker}</SpeakerName>
-      <SpeakerCompany>{company}</SpeakerCompany>
+      <SmallText>{company}</SmallText>
     </SpeakerInformation>
   </div>
 );
