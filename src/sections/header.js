@@ -14,6 +14,7 @@ const HeaderTitle = styled.h1`
 
 const DetailsBox = styled.div`
   width: 80%;
+  max-width: ${props => props.theme.maxWidth}px;
   background: #fdaa89;
   color: black;
 
