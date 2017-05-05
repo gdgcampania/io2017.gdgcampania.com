@@ -7,7 +7,8 @@ const getStaticImageURL = props => {
     height: 400,
     query: "",
     key: "AIzaSyD_6uPbPjudlHYZ7iL3uPkPiNxzQ2d8HLk",
-    markers: ""
+    markers: "",
+    scale: 1
   };
 
   const config = {};
@@ -31,4 +32,6 @@ const getStaticImageURL = props => {
   return `https://maps.googleapis.com/maps/api/staticmap?${query}`;
 };
 
-export default props => <img src={getStaticImageURL(props)} />;
+export default ({ className, ...props }) => (
+  <img className={className} src={getStaticImageURL(props)} />
+);
