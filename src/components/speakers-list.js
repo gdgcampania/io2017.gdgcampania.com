@@ -15,8 +15,15 @@ const SpeakersList = styled(BaseList)`
     justify-content: space-between;
 
     > * {
-        width: calc(100% / 3 - 10px);
-        margin-bottom: 10px;
+        width: calc(100% / 2 - 10px);
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 640px) {
+        > * {
+            width: calc(100% / 3 - 10px * 2);
+            margin-bottom: 30px;
+        }
     }
 `;
 
