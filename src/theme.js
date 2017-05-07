@@ -4,8 +4,8 @@ export default {
     text: "black"
   },
   header: {
-    background: "#525b64",
-    text: "white"
+    background: "white",
+    text: "black"
   },
 
   maxWidth: 900

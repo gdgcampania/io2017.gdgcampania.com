@@ -4,13 +4,7 @@ import styled from "styled-components";
 
 import Section from "../components/section";
 import Wrapper from "../components/wrapper";
-
-const HeaderTitle = styled.h1`
-  font-family: 'Libre Baskerville', serif;
-  font-size: 8vh;
-  font-weight: normal;
-  text-align: center;
-`;
+import HeaderAnimation from "../components/header-animation";
 
 const DetailsBox = styled.div`
   width: 80%;
@@ -59,26 +53,15 @@ const Button = styled.button`
 `;
 
 export default () => (
-  <Section
-    variant="header"
-    background="https://source.unsplash.com/1600x900/?seaside"
-    centered
-    relative
-    almostFullscreen
-    overlay
-  >
-    <Wrapper>
-      <HeaderTitle>Google IO extended Campania</HeaderTitle>
-
-    </Wrapper>
-
-    <DetailsBox>
+  <Section variant="header" relative fullscreen>
+    <HeaderAnimation />
+    {/*<DetailsBox>
       <Date>17 Maggio 2017</Date>
       <p>
         Città della Scienza, Napoli
       </p>
 
       <Button>Registrati</Button>
-    </DetailsBox>
+    </DetailsBox>*/}
   </Section>
 );
